@@ -1,0 +1,128 @@
+.about {
+  padding-top: 170px;
+  padding-bottom: 510px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  overflow: hidden;
+
+  @media screen and (max-width: 1023px) {
+    padding-top: 40px;
+    padding-bottom: 240px;
+  }
+}
+
+.about__title {
+  margin-bottom: 92px;
+  font-size: 56px;
+
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 32px;
+    font-size: 34px;
+  }
+}
+
+.about__wrap {
+  position: relative;
+  width: fit-content;
+}
+
+.about__description {
+  max-width: 574px;
+  font-size: 32px;
+  text-align: center;
+
+  @media screen and (max-width: 1023px) {
+    max-width: 303px;
+    font-size: 24px;
+  }
+}
+
+.accent-color {
+  color: #04f;
+}
+
+.about__images {
+  img {
+    position: absolute;
+
+    @media screen and (max-width: 1023px) {
+      scale: 0.5;
+    }
+
+    &:nth-of-type(1) {
+      top: 15px;
+      left: -171px;
+      translate: -100% 0;
+      @media screen and (max-width: 1023px) {
+        top: -110px;
+        left: 80px;
+      }
+    }
+    &:nth-of-type(2) {
+      bottom: -5px;
+      left: -91px;
+      translate: -100% 100%;
+      @media screen and (max-width: 1023px) {
+        bottom: 90px;
+        left: 100px;
+      }
+    }
+    &:nth-of-type(3) {
+      bottom: -136px;
+      left: -8px;
+      translate: 0 100%;
+      @media screen and (max-width: 1023px) {
+        bottom: 40px;
+        left: 70px;
+      }
+    }
+    &:nth-of-type(4) {
+      bottom: -104px;
+      left: 187px;
+      translate: 0 100%;
+      @media screen and (max-width: 1023px) {
+        bottom: -20px;
+        left: 34px;
+      }
+    }
+    &:nth-of-type(5) {
+      bottom: -114px;
+      left: 482px;
+      translate: 0 100%;
+      @media screen and (max-width: 1023px) {
+        bottom: 80px;
+        left: 160px;
+      }
+    }
+    &:nth-of-type(6) {
+      bottom: -32px;
+      right: -74px;
+      translate: 100% 100%;
+      @media screen and (max-width: 1023px) {
+        right: 75px;
+        bottom: 20px;
+      }
+    }
+    &:nth-of-type(7) {
+      top: 136px;
+      right: -224px;
+      translate: 100% 0;
+      @media screen and (max-width: 1023px) {
+        top: 50px;
+        right: 35px;
+      }
+    }
+    &:nth-of-type(8) {
+      top: -57px;
+      right: -25px;
+      translate: 100% 0;
+      @media screen and (max-width: 1023px) {
+        top: -130px;
+        right: 120px;
+      }
+    }
+  }
+}

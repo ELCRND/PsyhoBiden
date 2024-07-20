@@ -1,0 +1,142 @@
+.buy {
+  padding-top: 90px;
+
+  @media screen and (max-width: 1023px) {
+    padding-top: 40px;
+  }
+}
+
+.buy__title {
+  margin: 55px;
+  font-size: 56px;
+  text-align: center;
+}
+
+.buy__steps {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+  place-content: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 50px 87px;
+
+  @media screen and (max-width: 1023px) {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.steps__item {
+  display: flex;
+  gap: 8px;
+
+  &:nth-of-type(2) {
+    grid-row: 2 / 3;
+  }
+  &:nth-of-type(4) {
+    grid-row: 2 / 3;
+  }
+}
+
+.step__num {
+  font-size: 50px;
+  line-height: 105%;
+  text-transform: uppercase;
+}
+
+.step__titpe {
+  margin-bottom: 7px;
+  font-size: 26px;
+  line-height: 105%;
+  text-transform: uppercase;
+}
+
+.step__text {
+  max-width: 470px;
+  display: block;
+  font-size: 22px;
+  line-height: 105%;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.4);
+
+  .accent-text {
+    color: rgba(0, 0, 0, 0.9);
+  }
+}
+
+.buy__banner {
+  max-width: 1287px;
+  height: 290px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 70px;
+  position: relative;
+  background-image: url("../public/img/buy/buy_bg.png");
+  background-size: cover;
+
+  @media screen and (max-width: 768px) {
+    background-position: -320px 0;
+    border-radius: 0;
+  }
+  @media screen and (max-width: 440px) {
+    background-position: -440px 0;
+  }
+}
+
+.buy__socials {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  top: 70px;
+  left: 50px;
+
+  a {
+    transition: scale 200ms ease;
+    &:first-of-type {
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}
+
+.buy__btn {
+  width: 217px;
+  height: 65px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 4px -3px 8px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  font-size: 32px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 112px;
+  right: 50px;
+  transition: filter 200ms ease;
+
+  @media screen and (max-width: 768px) {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    top: 126px;
+  }
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+  &:active {
+    filter: brightness(1);
+  }
+}

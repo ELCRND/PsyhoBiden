@@ -1,0 +1,60 @@
+.home {
+  height: 1080px;
+  background-image: url("../public/img/home/home_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  @media screen and (max-width: 1023px) {
+    height: 720px;
+    background-image: url("../public/img/home/home_bg_mobile.jpg");
+  }
+}
+
+.home__btn {
+  width: 217px;
+  height: 65px;
+  border-radius: 30px;
+  box-shadow: inset 4px -3px 8px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  translate: -50% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  transition: filter 200ms ease;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+  &:active {
+    filter: brightness(1);
+  }
+}
+
+.home__socials {
+  position: absolute;
+  top: 30%;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  a {
+    transition: scale 200ms ease;
+
+    &:nth-of-type(2) {
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}
