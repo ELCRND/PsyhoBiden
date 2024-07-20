@@ -947,6 +947,16 @@ body {
   }
 }
 
+.footer__link {
+  transition: color 200ms ease;
+}
+.footer__link:hover {
+  color: #ccc;
+}
+.footer__link:active {
+  color: rgba(37, 41, 77, 0.8);
+}
+
 .footer__title {
   margin-left: 95px;
   margin-right: 95px;
